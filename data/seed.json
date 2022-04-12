@@ -4,20 +4,20 @@
   },
   "users": [
     {
-      "email": "admin@medusa-test.com",
-      "password": "supersecret"
-    }
-  ],
+    "email": "admin@medusa-test.com",
+    "password": "supersecret"
+  }
+],
   "regions": [
     {
-      "id": "test-region-eu",
-      "name": "EU",
-      "currency_code": "eur",
-      "tax_rate": 0,
-      "payment_providers": ["manual"],
-      "fulfillment_providers": ["manual"],
-      "countries": ["gb", "de", "dk", "se", "fr", "es", "it"]
-    },
+    "id": "test-region-eu",
+    "name": "EU",
+    "currency_code": "eur",
+    "tax_rate": 0,
+    "payment_providers": ["manual"],
+    "fulfillment_providers": ["manual"],
+    "countries": ["gb", "de", "dk", "se", "fr", "es", "it"]
+  },
     {
       "id": "test-region-na",
       "name": "NA",
@@ -30,15 +30,15 @@
   ],
   "shipping_options": [
     {
-      "name": "PostFake Standard",
-      "region_id": "test-region-eu",
-      "provider_id": "manual",
-      "data": {
-        "id": "manual-fulfillment"
-      },
-      "price_type": "flat_rate",
-      "amount": 1000
+    "name": "PostFake Standard",
+    "region_id": "test-region-eu",
+    "provider_id": "manual",
+    "data": {
+      "id": "manual-fulfillment"
     },
+    "price_type": "flat_rate",
+    "amount": 1000
+  },
     {
       "name": "PostFake Express",
       "region_id": "test-region-eu",
@@ -116,753 +116,647 @@
   ],
   "products": [
     {
-      "title": "Medusa T-Shirt",
-      "subtitle": null,
-      "description": "Reimagine the feeling of a classic T-shirt. With our cotton T-shirts, everyday essentials no longer have to be ordinary.",
-      "handle": "t-shirt",
-      "is_giftcard": false,
-      "weight": 400,
-      "images": [
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-front.png",
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-black-back.png",
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-white-front.png",
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/tee-white-back.png"
-      ],
-      "options": [
-        {
-          "title": "Size",
-          "values": ["S", "M", "L", "XL"]
-        },
-        {
-          "title": "Color",
-          "values": ["Black", "White"]
-        }
-      ],
-      "variants": [
-        {
-          "title": "S / Black",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "S"
-            },
-            {
-              "value": "Black"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        },
-        {
-          "title": "S / White",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "S"
-            },
-            {
-              "value": "White"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        },
-        {
-          "title": "M / Black",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "M"
-            },
-            {
-              "value": "Black"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        },
-        {
-          "title": "M / White",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "M"
-            },
-            {
-              "value": "White"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        },
-        {
-          "title": "L / Black",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "L"
-            },
-            {
-              "value": "Black"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        },
-        {
-          "title": "L / White",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "L"
-            },
-            {
-              "value": "White"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        },
-        {
-          "title": "XL / Black",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "XL"
-            },
-            {
-              "value": "Black"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        },
-        {
-          "title": "XL / White",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2200
-            }
-          ],
-          "options": [
-            {
-              "value": "XL"
-            },
-            {
-              "value": "White"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        }
-      ]
+    "title": "Book 1",
+    "subtitle": null,
+    "description": "Book 1 description",
+    "handle": "book-1",
+    "is_giftcard": false,
+    "weight": 400,
+    "images": [
+      "http://ec2-54-229-97-142.eu-west-1.compute.amazonaws.com:8000/assets/img/book/book-16.png"
+    ],
+    "options": [{
+      "title": "Size",
+      "values": ["S", "M", "L", "XL"]
     },
+      {
+        "title": "Color",
+        "values": ["Black", "White"]
+      }
+    ],
+    "variants": [{
+      "title": "S / Black",
+      "prices": [{
+        "currency_code": "eur",
+        "amount": 1950
+      },
+        {
+          "currency_code": "usd",
+          "amount": 2200
+        }
+      ],
+      "options": [{
+        "value": "S"
+      },
+        {
+          "value": "Black"
+        }
+      ],
+      "inventory_quantity": 100,
+      "manage_inventory": true
+    },
+      {
+        "title": "S / White",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1950
+        },
+          {
+            "currency_code": "usd",
+            "amount": 2200
+          }
+        ],
+        "options": [{
+          "value": "S"
+        },
+          {
+            "value": "White"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "M / Black",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1950
+        },
+          {
+            "currency_code": "usd",
+            "amount": 2200
+          }
+        ],
+        "options": [{
+          "value": "M"
+        },
+          {
+            "value": "Black"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "M / White",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1950
+        },
+          {
+            "currency_code": "usd",
+            "amount": 2200
+          }
+        ],
+        "options": [{
+          "value": "M"
+        },
+          {
+            "value": "White"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "L / Black",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1950
+        },
+          {
+            "currency_code": "usd",
+            "amount": 2200
+          }
+        ],
+        "options": [{
+          "value": "L"
+        },
+          {
+            "value": "Black"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "L / White",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1950
+        },
+          {
+            "currency_code": "usd",
+            "amount": 2200
+          }
+        ],
+        "options": [{
+          "value": "L"
+        },
+          {
+            "value": "White"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "XL / Black",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1950
+        },
+          {
+            "currency_code": "usd",
+            "amount": 2200
+          }
+        ],
+        "options": [{
+          "value": "XL"
+        },
+          {
+            "value": "Black"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
+      {
+        "title": "XL / White",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1950
+        },
+          {
+            "currency_code": "usd",
+            "amount": 2200
+          }
+        ],
+        "options": [{
+          "value": "XL"
+        },
+          {
+            "value": "White"
+          }
+        ],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      }
+    ]
+  },
     {
-      "title": "Medusa Sweatshirt",
+      "title": "Book 2",
       "subtitle": null,
-      "description": "Reimagine the feeling of a classic sweatshirt. With our cotton sweatshirt, everyday essentials no longer have to be ordinary.",
-      "handle": "sweatshirt",
+      "description": "Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description Book 2 description ",
+      "handle": "book-2",
       "is_giftcard": false,
       "weight": 400,
       "images": [
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-front.png",
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatshirt-vintage-back.png"
+        "http://ec2-54-229-97-142.eu-west-1.compute.amazonaws.com:8000/assets/img/book/book-2.png"
       ],
-      "options": [
-        {
-          "title": "Size",
-          "values": ["S", "M", "L", "XL"]
-        }
-      ],
-      "variants": [
-        {
-          "title": "S",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 3350
-            }
-          ],
-          "options": [
-            {
-              "value": "S"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
+      "options": [{
+        "title": "Size",
+        "values": ["S", "M", "L", "XL"]
+      }],
+      "variants": [{
+        "title": "S",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 2950
         },
+          {
+            "currency_code": "usd",
+            "amount": 3350
+          }
+        ],
+        "options": [{
+          "value": "S"
+        }],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
         {
           "title": "M",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2950
+          },
             {
               "currency_code": "usd",
               "amount": 3350
             }
           ],
-          "options": [
-            {
-              "value": "M"
-            }
-          ],
+          "options": [{
+            "value": "M"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "L",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2950
+          },
             {
               "currency_code": "usd",
               "amount": 3350
             }
           ],
-          "options": [
-            {
-              "value": "L"
-            }
-          ],
+          "options": [{
+            "value": "L"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "XL",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2950
+          },
             {
               "currency_code": "usd",
               "amount": 3350
             }
           ],
-          "options": [
-            {
-              "value": "XL"
-            }
-          ],
+          "options": [{
+            "value": "XL"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         }
       ]
     },
     {
-      "title": "Medusa Sweatpants",
+      "title": "Book 3",
       "subtitle": null,
       "description": "Reimagine the feeling of classic sweatpants. With our cotton sweatpants, everyday essentials no longer have to be ordinary.",
-      "handle": "sweatpants",
+      "handle": "book-3",
       "is_giftcard": false,
       "weight": 400,
       "images": [
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-front.png",
+        "http://ec2-54-229-97-142.eu-west-1.compute.amazonaws.com:8000/assets/img/book/book-3.png",
         "https://medusa-public-images.s3.eu-west-1.amazonaws.com/sweatpants-gray-back.png"
       ],
-      "options": [
-        {
-          "title": "Size",
-          "values": ["S", "M", "L", "XL"]
-        }
-      ],
-      "variants": [
-        {
-          "title": "S",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
-            {
-              "currency_code": "usd",
-              "amount": 3350
-            }
-          ],
-          "options": [
-            {
-              "value": "S"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
+      "options": [{
+        "title": "Size",
+        "values": ["S", "M", "L", "XL"]
+      }],
+      "variants": [{
+        "title": "S",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 2950
         },
+          {
+            "currency_code": "usd",
+            "amount": 3350
+          }
+        ],
+        "options": [{
+          "value": "S"
+        }],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
         {
           "title": "M",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2950
+          },
             {
               "currency_code": "usd",
               "amount": 3350
             }
           ],
-          "options": [
-            {
-              "value": "M"
-            }
-          ],
+          "options": [{
+            "value": "M"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "L",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2950
+          },
             {
               "currency_code": "usd",
               "amount": 3350
             }
           ],
-          "options": [
-            {
-              "value": "L"
-            }
-          ],
+          "options": [{
+            "value": "L"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "XL",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2950
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2950
+          },
             {
               "currency_code": "usd",
               "amount": 3350
             }
           ],
-          "options": [
-            {
-              "value": "XL"
-            }
-          ],
+          "options": [{
+            "value": "XL"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         }
       ]
     },
     {
-      "title": "Medusa Shorts",
+      "title": "Book 4",
       "subtitle": null,
       "description": "Reimagine the feeling of classic shorts. With our cotton shorts, everyday essentials no longer have to be ordinary.",
-      "handle": "shorts",
+      "handle": "book-4",
       "is_giftcard": false,
       "weight": 400,
       "images": [
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-front.png",
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/shorts-vintage-back.png"
+        "http://ec2-54-229-97-142.eu-west-1.compute.amazonaws.com:8000/assets/img/book/book-4.png"
       ],
-      "options": [
-        {
-          "title": "Size",
-          "values": ["S", "M", "L", "XL"]
-        }
-      ],
-      "variants": [
-        {
-          "title": "S",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2500
-            },
-            {
-              "currency_code": "usd",
-              "amount": 2850
-            }
-          ],
-          "options": [
-            {
-              "value": "S"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
+      "options": [{
+        "title": "Size",
+        "values": ["S", "M", "L", "XL"]
+      }],
+      "variants": [{
+        "title": "S",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 2500
         },
+          {
+            "currency_code": "usd",
+            "amount": 2850
+          }
+        ],
+        "options": [{
+          "value": "S"
+        }],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
         {
           "title": "M",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2500
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2500
+          },
             {
               "currency_code": "usd",
               "amount": 2850
             }
           ],
-          "options": [
-            {
-              "value": "M"
-            }
-          ],
+          "options": [{
+            "value": "M"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "L",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2500
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2500
+          },
             {
               "currency_code": "usd",
               "amount": 2850
             }
           ],
-          "options": [
-            {
-              "value": "L"
-            }
-          ],
+          "options": [{
+            "value": "L"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "XL",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 2500
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 2500
+          },
             {
               "currency_code": "usd",
               "amount": 2850
             }
           ],
-          "options": [
-            {
-              "value": "XL"
-            }
-          ],
+          "options": [{
+            "value": "XL"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         }
       ]
     },
     {
-      "title": "Medusa Hoodie",
+      "title": "Book 5",
       "subtitle": null,
       "description": "Reimagine the feeling of a classic hoodie. With our cotton hoodie, everyday essentials no longer have to be ordinary.",
-      "handle": "hoodie",
+      "handle": "book-5",
       "is_giftcard": false,
       "weight": 400,
       "images": [
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/black_hoodie_front.png",
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/black_hoodie_back.png"
+        "http://ec2-54-229-97-142.eu-west-1.compute.amazonaws.com:8000/assets/img/book/book-5.png"
       ],
-      "options": [
-        {
-          "title": "Size",
-          "values": ["S", "M", "L", "XL"]
-        }
-      ],
-      "variants": [
-        {
-          "title": "S",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
-            {
-              "currency_code": "usd",
-              "amount": 4150
-            }
-          ],
-          "options": [
-            {
-              "value": "S"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
+      "options": [{
+        "title": "Size",
+        "values": ["S", "M", "L", "XL"]
+      }],
+      "variants": [{
+        "title": "S",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 3650
         },
+          {
+            "currency_code": "usd",
+            "amount": 4150
+          }
+        ],
+        "options": [{
+          "value": "S"
+        }],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
         {
           "title": "M",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 3650
+          },
             {
               "currency_code": "usd",
               "amount": 4150
             }
           ],
-          "options": [
-            {
-              "value": "M"
-            }
-          ],
+          "options": [{
+            "value": "M"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "L",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 3650
+          },
             {
               "currency_code": "usd",
               "amount": 4150
             }
           ],
-          "options": [
-            {
-              "value": "L"
-            }
-          ],
+          "options": [{
+            "value": "L"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "XL",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 3650
+          },
             {
               "currency_code": "usd",
               "amount": 4150
             }
           ],
-          "options": [
-            {
-              "value": "XL"
-            }
-          ],
+          "options": [{
+            "value": "XL"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         }
       ]
     },
     {
-      "title": "Medusa Longsleeve",
+      "title": "Book 6",
       "subtitle": null,
       "description": "Reimagine the feeling of a classic longsleeve. With our cotton longsleeve, everyday essentials no longer have to be ordinary.",
-      "handle": "longsleeve",
+      "handle": "book-6",
       "is_giftcard": false,
       "weight": 400,
       "images": [
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/ls-black-front.png",
+        "http://ec2-54-229-97-142.eu-west-1.compute.amazonaws.com:8000/assets/img/book/book-6.png",
         "https://medusa-public-images.s3.eu-west-1.amazonaws.com/ls-black-back.png"
       ],
-      "options": [
-        {
-          "title": "Size",
-          "values": ["S", "M", "L", "XL"]
-        }
-      ],
-      "variants": [
-        {
-          "title": "S",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
-            {
-              "currency_code": "usd",
-              "amount": 4150
-            }
-          ],
-          "options": [
-            {
-              "value": "S"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
+      "options": [{
+        "title": "Size",
+        "values": ["S", "M", "L", "XL"]
+      }],
+      "variants": [{
+        "title": "S",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 3650
         },
+          {
+            "currency_code": "usd",
+            "amount": 4150
+          }
+        ],
+        "options": [{
+          "value": "S"
+        }],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      },
         {
           "title": "M",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 3650
+          },
             {
               "currency_code": "usd",
               "amount": 4150
             }
           ],
-          "options": [
-            {
-              "value": "M"
-            }
-          ],
+          "options": [{
+            "value": "M"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "L",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 3650
+          },
             {
               "currency_code": "usd",
               "amount": 4150
             }
           ],
-          "options": [
-            {
-              "value": "L"
-            }
-          ],
+          "options": [{
+            "value": "L"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         },
         {
           "title": "XL",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 3650
-            },
+          "prices": [{
+            "currency_code": "eur",
+            "amount": 3650
+          },
             {
               "currency_code": "usd",
               "amount": 4150
             }
           ],
-          "options": [
-            {
-              "value": "XL"
-            }
-          ],
+          "options": [{
+            "value": "XL"
+          }],
           "inventory_quantity": 100,
           "manage_inventory": true
         }
       ]
     },
     {
-      "title": "Medusa Coffee Mug",
+      "title": "Book 7",
       "subtitle": null,
       "description": "Every programmer's best friend.",
-      "handle": "coffee-mug",
+      "handle": "book-7",
       "is_giftcard": false,
       "weight": 400,
       "images": [
-        "https://medusa-public-images.s3.eu-west-1.amazonaws.com/coffee-mug.png"
+        "http://ec2-54-229-97-142.eu-west-1.compute.amazonaws.com:8000/assets/img/book/book-7.png"
       ],
-      "options": [
-        {
-          "title": "Size",
-          "values": ["One Size"]
-        }
-      ],
-      "variants": [
-        {
-          "title": "One Size",
-          "prices": [
-            {
-              "currency_code": "eur",
-              "amount": 1000
-            },
-            {
-              "currency_code": "usd",
-              "amount": 1200
-            }
-          ],
-          "options": [
-            {
-              "value": "One Size"
-            }
-          ],
-          "inventory_quantity": 100,
-          "manage_inventory": true
-        }
-      ]
+      "options": [{
+        "title": "Size",
+        "values": ["One Size"]
+      }],
+      "variants": [{
+        "title": "One Size",
+        "prices": [{
+          "currency_code": "eur",
+          "amount": 1000
+        },
+          {
+            "currency_code": "usd",
+            "amount": 1200
+          }
+        ],
+        "options": [{
+          "value": "One Size"
+        }],
+        "inventory_quantity": 100,
+        "manage_inventory": true
+      }]
     }
   ]
 }
